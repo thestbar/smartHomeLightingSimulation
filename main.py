@@ -223,7 +223,7 @@ class Player(object):
         else:
             win.blit(character, (self.x, self.y))
         self.hitbox = (self.x + 10, self.y, 30, 60)
-        pygame.draw.rect(win, (255, 0, 0), self.hitbox, 2)
+        # pygame.draw.rect(win, (255, 0, 0), self.hitbox, 2)
 
 
 def redraw_game_window():
@@ -251,7 +251,7 @@ def redraw_game_window():
 
     home.draw_switches(window)
 
-    home.draw(window)
+    # home.draw(window)
     # always draw the character last so he is on top of the screen
     player.draw(window)
 
